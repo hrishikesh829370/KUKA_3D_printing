@@ -1,6 +1,20 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://wiki.ros.org/xacro" name="kuka_kr150_2_robot">
 
+
+  <!-- Start GZ or Ignition depending on ROS 2 Version -->
+  <xacro:arg name="is_ignition" default="true"/>
+
+  <!-- Include Gazebo Parameters -->
+
+  <xacro:include filename="$(find kuka_description)/urdf/kr150_gazebo.xacro" />
+
+  <!-- Include ros2_control Plugins -->
+  <xacro:include filename="$(find kuka_description)/urdf/kr150_ros2_control.xacro" />
+
+
+
+
   <xacro:property name="DEG_TO_RAD" value="${pi/180}"/>
   <xacro:macro name="radians" params="deg">
     ${deg * DEG_TO_RAD}
