@@ -13,6 +13,8 @@
 /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/collision/link_1.stl
 /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/collision/link_6.stl
 /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/urdf/kr150_2_macro.xacro
+/home/rishi/kuka_AM/install/kuka_description/share/kuka_description/urdf/kr150_gazebo.xacro
+/home/rishi/kuka_AM/install/kuka_description/share/kuka_description/urdf/kr150_ros2_control.xacro
 /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/launch/gazebo.launch.py
 /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/launch/display.launch.py
 /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/Rviz/rviz_visualization.rviz

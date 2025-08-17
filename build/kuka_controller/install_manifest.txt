@@ -1,0 +1,15 @@
+/home/rishi/kuka_AM/install/kuka_controller/share/ament_index/resource_index/package_run_dependencies/kuka_controller
+/home/rishi/kuka_AM/install/kuka_controller/share/ament_index/resource_index/parent_prefix_path/kuka_controller
+/home/rishi/kuka_AM/install/kuka_controller/share/kuka_controller/environment/ament_prefix_path.sh
+/home/rishi/kuka_AM/install/kuka_controller/share/kuka_controller/environment/ament_prefix_path.dsv
+/home/rishi/kuka_AM/install/kuka_controller/share/kuka_controller/environment/path.sh
+/home/rishi/kuka_AM/install/kuka_controller/share/kuka_controller/environment/path.dsv
+/home/rishi/kuka_AM/install/kuka_controller/share/kuka_controller/local_setup.bash
+/home/rishi/kuka_AM/install/kuka_controller/share/kuka_controller/local_setup.sh
+/home/rishi/kuka_AM/install/kuka_controller/share/kuka_controller/local_setup.zsh
+/home/rishi/kuka_AM/install/kuka_controller/share/kuka_controller/local_setup.dsv
+/home/rishi/kuka_AM/install/kuka_controller/share/kuka_controller/package.dsv
+/home/rishi/kuka_AM/install/kuka_controller/share/ament_index/resource_index/packages/kuka_controller
+/home/rishi/kuka_AM/install/kuka_controller/share/kuka_controller/cmake/kuka_controllerConfig.cmake
+/home/rishi/kuka_AM/install/kuka_controller/share/kuka_controller/cmake/kuka_controllerConfig-version.cmake
+/home/rishi/kuka_AM/install/kuka_controller/share/kuka_controller/package.xml
