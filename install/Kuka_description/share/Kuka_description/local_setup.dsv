@@ -1,0 +1,2 @@
+source;share/Kuka_description/environment/ament_prefix_path.sh
+source;share/Kuka_description/environment/path.sh

@@ -1,0 +1,6 @@
+Invoking command in '/home/rishi/kuka_AM/build/kuka_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rishi/kuka_AM/src/Kuka_description -DCMAKE_INSTALL_PREFIX=/home/rishi/kuka_AM/install/kuka_description
+Invoked command in '/home/rishi/kuka_AM/build/kuka_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rishi/kuka_AM/src/Kuka_description -DCMAKE_INSTALL_PREFIX=/home/rishi/kuka_AM/install/kuka_description
+Invoking command in '/home/rishi/kuka_AM/build/kuka_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rishi/kuka_AM/build/kuka_description -- -j8 -l8
+Invoked command in '/home/rishi/kuka_AM/build/kuka_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rishi/kuka_AM/build/kuka_description -- -j8 -l8
+Invoking command in '/home/rishi/kuka_AM/build/kuka_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rishi/kuka_AM/build/kuka_description
+Invoked command in '/home/rishi/kuka_AM/build/kuka_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rishi/kuka_AM/build/kuka_description

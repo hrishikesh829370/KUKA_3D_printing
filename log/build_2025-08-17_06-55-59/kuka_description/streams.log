@@ -1,0 +1,68 @@
+[0.013s] Invoking command in '/home/rishi/kuka_AM/build/kuka_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rishi/kuka_AM/src/Kuka_description -DCMAKE_INSTALL_PREFIX=/home/rishi/kuka_AM/install/kuka_description
+[0.101s] -- The C compiler identification is GNU 11.4.0
+[0.186s] -- The CXX compiler identification is GNU 11.4.0
+[0.207s] -- Detecting C compiler ABI info
+[0.343s] -- Detecting C compiler ABI info - done
+[0.366s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.367s] -- Detecting C compile features
+[0.369s] -- Detecting C compile features - done
+[0.377s] -- Detecting CXX compiler ABI info
+[0.509s] -- Detecting CXX compiler ABI info - done
+[0.534s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.535s] -- Detecting CXX compile features
+[0.536s] -- Detecting CXX compile features - done
+[0.549s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.994s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.150s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.246s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.246s] -- Added test 'lint_cmake' to check CMake code style
+[1.247s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.250s] -- Added test 'xmllint' to check XML markup files
+[1.251s] -- Configuring done
+[1.255s] -- Generating done
+[1.257s] -- Build files have been written to: /home/rishi/kuka_AM/build/kuka_description
+[1.262s] Invoked command in '/home/rishi/kuka_AM/build/kuka_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rishi/kuka_AM/src/Kuka_description -DCMAKE_INSTALL_PREFIX=/home/rishi/kuka_AM/install/kuka_description
+[1.266s] Invoking command in '/home/rishi/kuka_AM/build/kuka_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rishi/kuka_AM/build/kuka_description -- -j8 -l8
+[1.327s] Invoked command in '/home/rishi/kuka_AM/build/kuka_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rishi/kuka_AM/build/kuka_description -- -j8 -l8
+[1.340s] Invoking command in '/home/rishi/kuka_AM/build/kuka_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rishi/kuka_AM/build/kuka_description
+[1.350s] -- Install configuration: ""
+[1.350s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes
+[1.351s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2
+[1.351s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/visual
+[1.351s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/visual/link_1.dae
+[1.352s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/visual/link_5.dae
+[1.353s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/visual/link_2.dae
+[1.354s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/visual/link_3.dae
+[1.354s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/visual/link_6.dae
+[1.355s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/visual/base_link.dae
+[1.356s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/visual/link_4.dae
+[1.357s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/collision
+[1.357s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/collision/link_3.stl
+[1.357s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/collision/link_5.stl
+[1.357s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/collision/link_2.stl
+[1.358s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/collision/link_4.stl
+[1.358s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/collision/base_link.stl
+[1.358s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/collision/link_1.stl
+[1.358s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/collision/link_6.stl
+[1.359s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/urdf
+[1.359s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/urdf/kr150_2_macro.xacro
+[1.359s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/launch
+[1.359s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/launch/display.launch.py
+[1.359s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/Rviz
+[1.359s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/Rviz/rviz_visualization.rviz
+[1.359s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/ament_index/resource_index/package_run_dependencies/kuka_description
+[1.360s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/ament_index/resource_index/parent_prefix_path/kuka_description
+[1.360s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/environment/ament_prefix_path.sh
+[1.360s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/environment/ament_prefix_path.dsv
+[1.360s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/environment/path.sh
+[1.360s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/environment/path.dsv
+[1.361s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/local_setup.bash
+[1.361s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/local_setup.sh
+[1.361s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/local_setup.zsh
+[1.361s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/local_setup.dsv
+[1.361s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/package.dsv
+[1.361s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/ament_index/resource_index/packages/kuka_description
+[1.362s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/cmake/kuka_descriptionConfig.cmake
+[1.362s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/cmake/kuka_descriptionConfig-version.cmake
+[1.362s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/package.xml
+[1.365s] Invoked command in '/home/rishi/kuka_AM/build/kuka_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rishi/kuka_AM/build/kuka_description

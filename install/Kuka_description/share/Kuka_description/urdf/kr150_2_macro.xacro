@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="kuka_kr150_2_robot">
+
+  <xacro:property name="DEG_TO_RAD" value="${pi/180}"/>
+  <xacro:macro name="radians" params="deg">
+    ${deg * DEG_TO_RAD}
+  </xacro:macro>
+
+  <link name="base_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://Kuka_description/meshes/kr150_2/visual/base_link.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="package://Kuka_description/meshes/kr150_2/collision/base_link.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://Kuka_description/meshes/kr150_2/visual/link_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://Kuka_description/meshes/kr150_2/collision/link_1.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_2">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://Kuka_description/meshes/kr150_2/visual/link_2.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://Kuka_description/meshes/kr150_2/collision/link_2.stl"  />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_3">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://Kuka_description/meshes/kr150_2/visual/link_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://Kuka_description/meshes/kr150_2/collision/link_3.stl"  />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_4">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://Kuka_description/meshes/kr150_2/visual/link_4.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://Kuka_description/meshes/kr150_2/collision/link_4.stl"  />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_5">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://Kuka_description/meshes/kr150_2/visual/link_5.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://Kuka_description/meshes/kr150_2/collision/link_5.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="link_6">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://Kuka_description/meshes/kr150_2/visual/link_6.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://Kuka_description/meshes/kr150_2/collision/link_6.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="flange"/>
+  <joint name="joint_a1" type="revolute">
+    <origin xyz="0 0 0.75" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="link_1"/>
+    <axis xyz="0 0 -1"/>
+    <limit effort="0" lower="${radians(-185)}" upper="${radians(185)}" velocity="${radians(110)}"/>
+  </joint>
+  <joint name="joint_a2" type="revolute">
+    <origin xyz="0.35 0 0" rpy="0 0 0"/>
+    <parent link="link_1"/>
+    <child link="link_2"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="0" lower="${radians(-146)}" upper="${radians(0)}" velocity="${radians(110)}"/>
+  </joint>
+  <joint name="joint_a3" type="revolute">
+    <origin xyz="1.25 0 0" rpy="0 0 0"/>
+    <parent link="link_2"/>
+    <child link="link_3"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="0" lower="${radians(-119)}" upper="${radians(155)}" velocity="${radians(100)}"/>
+  </joint>
+  <joint name="joint_a4" type="revolute">
+    <origin xyz="0 0 -0.055" rpy="0 0 0"/>
+    <parent link="link_3"/>
+    <child link="link_4"/>
+    <axis xyz="-1 0 0"/>
+    <limit effort="0" lower="${radians(-350)}" upper="${radians(350)}" velocity="${radians(170)}"/>
+  </joint>
+  <joint name="joint_a5" type="revolute">
+    <origin xyz="1.1 0 0" rpy="0 0 0"/>
+    <parent link="link_4"/>
+    <child link="link_5"/>
+    <axis xyz="0 1 0"/>
+    <limit effort="0" lower="${radians(-125)}" upper="${radians(125)}" velocity="${radians(170)}"/>
+  </joint>
+  <joint name="joint_a6" type="revolute">
+    <origin xyz="0.23 0 0" rpy="0 0 0"/>
+    <parent link="link_5"/>
+    <child link="link_6"/>
+    <axis xyz="-1 0 0"/>
+    <limit effort="0" lower="${radians(-350)}" upper="${radians(350)}" velocity="${radians(238)}"/>
+  </joint>
+  <joint name="joint_a6-flange" type="fixed">
+    <parent link="link_6"/>
+    <child link="flange"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+  <link name="base" />
+  <joint name="base_link-base" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="base"/>
+  </joint>
+
+  <link name="tool0" />
+  <joint name="flange-tool0" type="fixed">
+    <parent link="flange"/>
+    <child link="tool0"/>
+    <origin xyz="0 0 0" rpy="0 ${radians(90)} 0"/>
+  </joint>
+
+</robot>
