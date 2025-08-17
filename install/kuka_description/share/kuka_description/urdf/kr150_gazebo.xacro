@@ -1,21 +1,20 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="arduinobot">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="kuka_kr150_2_robot">
 
-  <!-- ROS 2 Control -->
-  <gazebo>
-    <!-- ROS 2 Humble -->
+<gazebo>
+  <!-- Humble + Ignition -->
     <xacro:if value="$(arg is_ignition)">
       <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
-        <parameters>$(find arduinobot_controller)/config/arduinobot_controllers.yaml</parameters>
+        <parameters>$(find kuka_controller)/config/kukarobot_controllers.yaml</parameters>
       </plugin>
     </xacro:if>
 
-    <!-- ROS 2 Iron or above -->
-    <xacro:unless value="$(arg is_ignition)">
-      <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
-        <parameters>$(find arduinobot_controller)/config/arduinobot_controllers.yaml</parameters>
-      </plugin>
-    </xacro:unless>
-  </gazebo>
-
+  <!-- Iron/Jazzy + Gazebo (Harmonic+) -->
+  <xacro:unless value="$(arg is_ignition)">
+    <plugin filename="libgz_ros2_control-system.so"
+            name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <parameters>$(find kukarobot_controller)/config/kukarobot_controller.yaml</parameters>
+    </plugin>
+  </xacro:unless>
+</gazebo>
 </robot>

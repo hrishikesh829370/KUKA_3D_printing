@@ -1,0 +1,47 @@
+[0.013s] Invoking command in '/home/rishi/kuka_AM/build/kuka_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rishi/kuka_AM/build/kuka_description -- -j8 -l8
+[0.073s] Invoked command in '/home/rishi/kuka_AM/build/kuka_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rishi/kuka_AM/build/kuka_description -- -j8 -l8
+[0.075s] Invoking command in '/home/rishi/kuka_AM/build/kuka_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rishi/kuka_AM/build/kuka_description
+[0.084s] -- Install configuration: ""
+[0.084s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes
+[0.085s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2
+[0.085s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/visual
+[0.085s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/visual/link_1.dae
+[0.085s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/visual/link_5.dae
+[0.085s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/visual/link_2.dae
+[0.085s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/visual/link_3.dae
+[0.086s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/visual/link_6.dae
+[0.086s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/visual/base_link.dae
+[0.086s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/visual/link_4.dae
+[0.086s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/collision
+[0.086s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/collision/link_3.stl
+[0.086s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/collision/link_5.stl
+[0.086s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/collision/link_2.stl
+[0.086s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/collision/link_4.stl
+[0.087s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/collision/base_link.stl
+[0.087s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/collision/link_1.stl
+[0.087s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/meshes/kr150_2/collision/link_6.stl
+[0.087s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/urdf
+[0.087s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/urdf/kr150_2_macro.xacro
+[0.087s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/urdf/kr150_gazebo.xacro
+[0.087s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/urdf/kr150_ros2_control.xacro
+[0.088s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/launch
+[0.088s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/launch/gazebo.launch.py
+[0.088s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/launch/display.launch.py
+[0.088s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/Rviz
+[0.088s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/Rviz/rviz_visualization.rviz
+[0.088s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/ament_index/resource_index/package_run_dependencies/kuka_description
+[0.088s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/ament_index/resource_index/parent_prefix_path/kuka_description
+[0.089s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/environment/ament_prefix_path.sh
+[0.089s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/environment/ament_prefix_path.dsv
+[0.090s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/environment/path.sh
+[0.090s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/environment/path.dsv
+[0.090s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/local_setup.bash
+[0.090s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/local_setup.sh
+[0.090s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/local_setup.zsh
+[0.090s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/local_setup.dsv
+[0.091s] -- Installing: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/package.dsv
+[0.091s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/ament_index/resource_index/packages/kuka_description
+[0.091s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/cmake/kuka_descriptionConfig.cmake
+[0.091s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/cmake/kuka_descriptionConfig-version.cmake
+[0.091s] -- Up-to-date: /home/rishi/kuka_AM/install/kuka_description/share/kuka_description/package.xml
+[0.093s] Invoked command in '/home/rishi/kuka_AM/build/kuka_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rishi/kuka_AM/build/kuka_description

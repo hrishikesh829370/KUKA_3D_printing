@@ -1,61 +1,80 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="kuka_kr150_2_robot">
+<!-- ros2_control hardware + interfaces for KR150-2 -->
+<ros2_control name="KR150System" type="system">
 
-    <ros2_control name="RobotSystem" type="system">
+  <!-- Select hardware plugin by simulator -->
+  <!-- Humble + Ignition (Fortress/Garden): ign_ros2_control -->
+  <xacro:if value="$(arg is_ignition)">
+    <hardware>
+      <plugin>ign_ros2_control/IgnitionSystem</plugin>
+    </hardware>
+  </xacro:if>
+  <!-- Iron/Jazzy/Rolling + modern Gazebo (Harmonic+): gz_ros2_control -->
+  <xacro:unless value="$(arg is_ignition)">
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware>
+  </xacro:unless>
 
-        <xacro:property name="PI" value="3.14159265359" />
+  <!-- a1 -->
+  <joint name="joint_a1">
+    <command_interface name="position">
+      <param name="min">-3.228859116</param>
+      <param name="max"> 3.228859116</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
 
-        <!-- ros2_control Gazebo -->
-        <!-- ROS 2 Humble -->
-        <xacro:if value="$(arg is_ignition)">
-            <hardware>
-                <plugin>ign_ros2_control/IgnitionSystem</plugin>
-            </hardware>
-        </xacro:if>
+  <!-- a2 -->
+  <joint name="joint_a2">
+    <command_interface name="position">
+      <param name="min">-2.548180708</param>
+      <param name="max"> 0.0</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
 
-        <!-- ROS 2 Iron or above -->
-        <xacro:unless value="$(arg is_ignition)">
-            <hardware>
-                <plugin>gz_ros2_control/GazeboSimSystem</plugin>
-            </hardware>
-        </xacro:unless>
+  <!-- a3 -->
+  <joint name="joint_a3">
+    <command_interface name="position">
+      <param name="min">-2.076941810</param>
+      <param name="max"> 2.705260341</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
 
-        <joint name="joint_1">
-            <command_interface name="position">
-            <param name="min">-${PI / 2}</param>
-            <param name="max">${PI / 2}</param>
-            </command_interface>
-            <state_interface name="position"/>
-        </joint>
+  <!-- a4 -->
+  <joint name="joint_a4">
+    <command_interface name="position">
+      <param name="min">-6.108652382</param>
+      <param name="max"> 6.108652382</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
 
-        <joint name="joint_2">
-            <command_interface name="position">
-            <param name="min">-${PI / 2}</param>
-            <param name="max">${PI / 2}</param>
-            </command_interface>
-            <state_interface name="position"/>
-        </joint>
+  <!-- a5 -->
+  <joint name="joint_a5">
+    <command_interface name="position">
+      <param name="min">-2.181661565</param>
+      <param name="max"> 2.181661565</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
 
-        <joint name="joint_3">
-            <command_interface name="position">
-            <param name="min">-${PI / 2}</param>
-            <param name="max">${PI / 2}</param>
-            </command_interface>
-            <state_interface name="position"/>
-        </joint>
-
-        <joint name="joint_4">
-            <command_interface name="position">
-            <param name="min">-${PI / 2}</param>
-            <param name="max">0.0</param>
-            </command_interface>
-            <state_interface name="position"/>
-        </joint>
-
-        <joint name="joint_5">
-            <param name="mimic">joint_4</param>
-            <param name="multiplier">-1</param>
-        </joint>
-    </ros2_control>
-
+  <!-- a6 -->
+  <joint name="joint_a6">
+    <command_interface name="position">
+      <param name="min">-6.108652382</param>
+      <param name="max"> 6.108652382</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+</ros2_control>
 </robot>
