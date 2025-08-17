@@ -5,7 +5,7 @@
   <!-- Humble + Ignition -->
     <xacro:if value="$(arg is_ignition)">
       <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
-        <parameters>$(find kuka_controller)/config/kukarobot_controllers.yaml</parameters>
+        <parameters>$(find kuka_controller)/config/kukarobot_controller.yaml</parameters>
       </plugin>
     </xacro:if>
 
