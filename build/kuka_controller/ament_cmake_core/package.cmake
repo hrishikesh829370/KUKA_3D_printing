@@ -5,7 +5,7 @@ set(kuka_controller_BUILD_DEPENDS "rclcpp" "rclpy" "trajectory_msgs" "sensor_msg
 set(kuka_controller_BUILDTOOL_DEPENDS "ament_cmake" "ament_cmake_python")
 set(kuka_controller_BUILD_EXPORT_DEPENDS "rclcpp" "rclpy" "trajectory_msgs" "sensor_msgs")
 set(kuka_controller_BUILDTOOL_EXPORT_DEPENDS )
-set(kuka_controller_EXEC_DEPENDS "ros2launch" "robot_state_publisher" "xacro" "controller_manager" "arduinobot_description" "joint_state_publisher_gui" "rclcpp" "rclpy" "trajectory_msgs" "sensor_msgs")
+set(kuka_controller_EXEC_DEPENDS "ros2launch" "robot_state_publisher" "xacro" "controller_manager" "kuka_description" "joint_state_publisher_gui" "rclcpp" "rclpy" "trajectory_msgs" "sensor_msgs")
 set(kuka_controller_TEST_DEPENDS "ament_lint_auto" "ament_lint_common")
 set(kuka_controller_GROUP_DEPENDS )
 set(kuka_controller_MEMBER_OF_GROUPS )

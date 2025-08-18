@@ -43,7 +43,10 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kuka_controller" TYPE DIRECTORY FILES "/home/rishi/kuka_AM/src/kuka_controller/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kuka_controller" TYPE DIRECTORY FILES
+    "/home/rishi/kuka_AM/src/kuka_controller/config"
+    "/home/rishi/kuka_AM/src/kuka_controller/launch"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

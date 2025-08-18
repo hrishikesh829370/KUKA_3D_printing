@@ -1,7 +1,7 @@
 controller_manager:
   ros__parameters:
     # Controller loop rate. Use 200–400 Hz with Gazebo; 250 is a good default.
-    update_rate: 250
+    update_rate: 1000 
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
@@ -20,21 +20,25 @@ arm_controller:
       - joint_a6
 
     # Must match the <ros2_control> block you now have
-    command_interfaces: [position]
-    state_interfaces: [position, velocity]
+    command_interfaces: 
+      - position
+    state_interfaces: 
+      - position
+      - velocity
 
     # Trajectory handling
-    allow_partial_joints_goal: false
-    # open_loop_control: false     # (omit; not used for position interface)
-    # allow_integration_in_goal_trajectories: false  # (omit unless you explicitly need it)
+    #allow_partial_joints_goal: false
+    open_loop_control: false     # (omit; not used for position interface)
+    allow_integration_in_goal_trajectories: false  # (omit unless you explicitly need it)
 
     # Basic constraints (tune as needed)
-    constraints:
-      goal_time: 0.5
-      stopped_velocity_tolerance: 0.01
-      joint_a1: { trajectory: 0.05, goal: 0.02 }
-      joint_a2: { trajectory: 0.05, goal: 0.02 }
-      joint_a3: { trajectory: 0.05, goal: 0.02 }
-      joint_a4: { trajectory: 0.05, goal: 0.02 }
-      joint_a5: { trajectory: 0.05, goal: 0.02 }
-      joint_a6: { trajectory: 0.05, goal: 0.02 }
+    
+    #constraints:
+    #  goal_time: 0.5
+    #  stopped_velocity_tolerance: 0.01
+    #  joint_a1: { trajectory: 0.05, goal: 0.02 }
+    #  joint_a2: { trajectory: 0.05, goal: 0.02 }
+    #  joint_a3: { trajectory: 0.05, goal: 0.02 }
+    #  joint_a4: { trajectory: 0.05, goal: 0.02 }
+    #  joint_a5: { trajectory: 0.05, goal: 0.02 }
+    #  joint_a6: { trajectory: 0.05, goal: 0.02 }

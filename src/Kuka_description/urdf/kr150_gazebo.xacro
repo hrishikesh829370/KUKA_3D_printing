@@ -13,7 +13,7 @@
   <xacro:unless value="$(arg is_ignition)">
     <plugin filename="libgz_ros2_control-system.so"
             name="gz_ros2_control::GazeboSimROS2ControlPlugin">
-      <parameters>$(find kukarobot_controller)/config/kukarobot_controller.yaml</parameters>
+      <parameters>$(find kuka_controller)/config/kukarobot_controller.yaml</parameters>
     </plugin>
   </xacro:unless>
 </gazebo>
